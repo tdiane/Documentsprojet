@@ -1,0 +1,9 @@
+---
+- hosts: production
+  tasks:  
+    - name: copie ROOT
+      copy: 
+        src: ROOT.war
+        dest: /var/lib/docker/volumes/autodeploy/_data/
+
+
